@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ThemTuActivity">
+
+
+    <TextView
+        android:id="@+id/tvTu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Từ vựng"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvDinhNghia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Định nghĩa"
+        android:layout_below="@+id/tvTu"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:id="@+id/tvHinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hình ảnh"
+        android:layout_below="@+id/tvDinhNghia"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/editTuMoi"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Word"
+        android:layout_toRightOf="@+id/tvTu"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="100dp"/>
+
+    <EditText
+        android:id="@+id/editDinhNghiaMoi"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:hint="Definition"
+        android:layout_toRightOf="@+id/tvDinhNghia"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="70dp" />
+
+
+    <EditText
+        android:id="@+id/editHinh"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:hint="Image link"
+        android:layout_toRightOf="@+id/tvDinhNghia"
+        android:layout_below="@+id/editDinhNghiaMoi"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="30dp" />
+
+    <ImageButton
+        android:id="@+id/imgbtnThem"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/add"
+        android:layout_below="@+id/tvHinh"
+        android:layout_marginTop="50dp"
+        android:onClick="ThemTu"/>
+    <ImageButton
+        android:id="@+id/imgbtnBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/back"
+        android:layout_below="@+id/imgbtnThem"
+        android:layout_marginTop="30dp"
+        android:onClick="Back"/>
+
+
+</RelativeLayout>
